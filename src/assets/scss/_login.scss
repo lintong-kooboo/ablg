@@ -21,11 +21,17 @@
   overflow: hidden;
   .login-username,
   .login-password {
-    border-bottom: 1px solid #ebebeb;
-    margin-bottom: 40px;
-    padding: 5px;
+    box-sizing: border-box;
+    margin-bottom: 24px;
+    padding-bottom: 16px;
+    overflow: hidden;
     input {
+      text-indent: 16px;
+      width: 100%;
+      padding: 5px 0;
+      margin-bottom: 5px;
       border: none;
+      border-bottom: 1px solid #ebebeb;
       font-size: 16px;
       color: #1a1a1a;
     }
@@ -52,5 +58,10 @@
     font-size: 14px;
     float: right;
     cursor: pointer;
+  }
+  .error-message {
+    color: red;
+    float: left;
+    font-size: 12px;
   }
 }
